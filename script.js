@@ -39,3 +39,16 @@ function toggleElement(e) {
     allActivpanels.forEach(element => element.classList.remove('active'));
     this.classList.toggle("active"); // Toggle Active Class
 }
+
+// ANother solution
+function toggleEle(e) {
+  console.log(e.target.parentElement);
+  accordion.forEach(function (ele) {
+    if (e.target.parentElement === ele) {
+      ele.classList.toggle('active');
+    }
+    else {
+      ele.classList.remove('active');
+    }
+  })
+}
