@@ -9,6 +9,7 @@ accordion.forEach((element) => {
  function toggleElement(e) {
     // console.log(e); //display the event
     // console.log(this); // display the parent element panel
-    console.log(e.target); // display the clicked element if the head the head if the body will displau the body
+    //console.log(e.target); // display the clicked element if the head the head if the body will displau the body
+    this.classList.toggle("active");
 }
 
