@@ -6,10 +6,16 @@
 .main .active .abody{
     display: block;
 }
+.main .active .ahead{
+    background-color: #111;
+}
 .main .ahead {
     background-color: #333;
     padding:5px;
     color:white;
     font-size: 1.6em;
     margin:5px 0;
+}
+.main .ahead:hover{
+    background-color: #444;
 }
